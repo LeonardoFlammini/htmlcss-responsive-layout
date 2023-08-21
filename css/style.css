@@ -25,6 +25,13 @@
   max-width: 576px;
   margin: 0 auto;
 }
+.frame {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 20px;
+}
 /* header */
 
 header {
@@ -61,6 +68,8 @@ main .col {
   padding: 20px 30px 0 30px;
 }
 main .card {
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: white; /* debug */
   border-radius: 15px;
   border: 1px solid black ; /* debug */
@@ -72,7 +81,7 @@ main #partners .row {
 }
 
 p{
-  padding: 20px 0;
+  padding-bottom: 20px;
 }
 
 #with-us .container{
@@ -80,3 +89,13 @@ p{
 }
 /* intro */
 
+
+/* footer */
+footer {
+  height: 200px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+footer .text {
+  padding: 20px 0;
+}
