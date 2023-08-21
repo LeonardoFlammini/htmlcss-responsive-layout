@@ -4,3 +4,36 @@
   box-sizing: border-box;
 }
 
+/* Utils */
+
+.d-flex {
+  display: flex;
+}
+
+.debug-1{
+  background-color: coral;
+  border: 1px solid black;
+}
+
+.debug-2 {
+  background-color: brown;
+  order: 1px solid black;
+}
+
+.container {
+  width: 90%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+/* header */
+
+header {
+  height: 70px;
+  align-items: center;
+}
+
+header .container {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
