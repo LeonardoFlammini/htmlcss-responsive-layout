@@ -234,18 +234,85 @@ main #partners .card {
   background-color: var(--violet);
 }
 
-main #partners .card .frame img {
+main #partners .card .frame img, 
+main #about .card .frame img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
 
+/* with-us */
 
-#with-us .container{
+main #with-us {
+  background-color: var(--violet);
+  padding-bottom: 50px;
+}
+
+main #with-us .container{
   align-items: center;
 }
 
+main #with-us .container .title.benefits {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  padding: 50px 30px 0 30px;
+}
 
+main #with-us .card ,
+main #about .card {
+  align-items: flex-start;
+  background-color: white;
+  font-weight: lighter;
+  color: grey;
+}
+
+main #with-us .card .number {
+  color: var(--violet);
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+main #with-us .card .title {
+  color: var(--violet);
+  font-size: 2rem;
+}
+
+.btn.purple {
+  font-size: 1.2rem; 
+  background-color: var(--violet);
+  color: white;
+  padding: 10px 50px;
+}
+
+/* about */
+
+main #about .col {
+  justify-content: flex-start;
+}
+
+main #about .card {
+  padding: 0;
+}
+
+main #about .title {
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--violet);
+}
+
+main #about .card .text {
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--violet);
+}
+
+/* start */
+main #start {
+  background-color: var(--violet);
+}
 
 /* footer */
 footer {
