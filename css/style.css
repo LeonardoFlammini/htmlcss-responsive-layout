@@ -81,6 +81,7 @@ main #partners .row {
 }
 
 p{
+  display: block;
   padding-bottom: 20px;
 }
 
