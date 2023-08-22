@@ -4,15 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ==" crossorigin="anonymous"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>Responsive Layout</title>
 </head>
 <body>
 
 
-  <header class="d-flex debug-1">
+  <header class="d-flex">
    <div class="container d-flex">
-    <div class="logo">LOGO</div>
-    <nav>MENU</nav>
+    <div class="logo"><img src="img/logo.png" alt="logo"></div>
+    <nav class="menu">MENU</nav>
+    <nav class="hamburger"><i class="fa-solid fa-bars"></i></nav>
    </div>
   </header>
 
@@ -24,14 +29,38 @@
 
         <div class="row d-flex">
 
-          <div class="col d-flex debug-2">
-            <div class="card d-flex">
-             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias a dicta quibusdam nam quisquam alias accusantium aliquid eum molestiae nobis aspernatur, ipsum, nisi, porro quam hic? Aliquid dignissimos aliquam cupiditate, accusantium excepturi deleniti eius quo fugit vero saepe animi minus repellat harum? Quo saepe vel nesciunt facere. Incidunt, unde pariatur! Inventore necessitatibus odio et rerum cupiditate sequi suscipit, modi reiciendis quo tempora magnam, architecto excepturi dolorum molestias labore reprehenderit quibusdam ad minus quod quas culpa id? Sequi earum id ad sed, optio, quae aperiam accusantium illum labore sint vel, unde minima ullam libero vitae ea sunt neque cumque blanditiis.
+          <div class="col d-flex">
+
+            <div class="card d-flex" id="card-phone">
+            
+              <div class="left"> 
+            
+                <div class="title">Get a demo application</div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, similique consequatur?sit amet consectetur adipisicing elit. Tenetur, similique consequatur?</p>
+            
+                <div id="btn-phone">
+                  <a href="#" class="btn blue">
+                    <i class="fa-brands fa-apple"></i>
+                    App Store
+                  </a>
+            
+                </div>
+            
+              </div>
+            
+              <div class="right">
+                <img src="img/phone.png" alt="phone">
+              </div>
+            
             </div>
+          
           </div>
-          <div class="col d-flex debug-2">
+          
+          <div class="col d-flex">
             <div class="card d-flex">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias a dicta quibusdam nam quisquam alias accusantium aliquid eum molestiae nobis aspernatur, ipsum, nisi, porro quam hic? Aliquid dignissimos aliquam cupiditate, accusantium excepturi deleniti eius quo fugit vero saepe animi minus repellat harum? Quo saepe vel nesciunt facere. Incidunt, unde pariatur! Inventore necessitatibus odio et rerum cupiditate sequi suscipit, modi reiciendis quo tempora magnam, architecto excepturi dolorum molestias labore reprehenderit quibusdam ad minus quod quas culpa id? Sequi earum id ad sed, optio, quae aperiam accusantium illum labore sint vel, unde minima ullam libero vitae ea sunt neque cumque blanditiis.
+              <div class="icon"><i class="fa-solid fa-file-code"></i></div>
+              <div class="title">Clean Code</div>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus eaque illo ipsa hic nam quae excepturi accusamus quod, reprehenderit suscipit necessitatibus. Beatae error fugiat sapiente atque nesciunt tempora nostrum laborum!</p>
             </div>
           </div>
 
@@ -40,19 +69,25 @@
        
         <div class="row d-flex">
 
-          <div class="col d-flex debug-2">
+          <div class="col d-flex">
             <div class="card d-flex">
-             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias a dicta quibusdam nam quisquam alias accusantium aliquid eum molestiae nobis aspernatur, ipsum, nisi, porro quam hic? Aliquid dignissimos aliquam cupiditate, accusantium excepturi deleniti eius quo fugit vero saepe animi minus repellat harum? Quo saepe vel nesciunt facere. Incidunt, unde pariatur! Inventore necessitatibus odio et rerum cupiditate sequi suscipit, modi reiciendis quo tempora magnam, architecto excepturi dolorum molestias labore reprehenderit quibusdam ad minus quod quas culpa id? Sequi earum id ad sed, optio, quae aperiam accusantium illum labore sint vel, unde minima ullam libero vitae ea sunt neque cumque blanditiis.
+              <div class="icon"><i class="fa-solid fa-compass-drafting"></i></div>
+              <div class="title">Web design</div>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus eaque illo ipsa hic nam quae excepturi accusamus quod, reprehenderit suscipit necessitatibus. Beatae error fugiat sapiente atque nesciunt tempora nostrum laborum!</p>
             </div>
           </div>
-          <div class="col d-flex debug-2">
+          <div class="col d-flex">
             <div class="card d-flex">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias a dicta quibusdam nam quisquam alias accusantium aliquid eum molestiae nobis aspernatur, ipsum, nisi, porro quam hic? Aliquid dignissimos aliquam cupiditate, accusantium excepturi deleniti eius quo fugit vero saepe animi minus repellat harum? Quo saepe vel nesciunt facere. Incidunt, unde pariatur! Inventore necessitatibus odio et rerum cupiditate sequi suscipit, modi reiciendis quo tempora magnam, architecto excepturi dolorum molestias labore reprehenderit quibusdam ad minus quod quas culpa id? Sequi earum id ad sed, optio, quae aperiam accusantium illum labore sint vel, unde minima ullam libero vitae ea sunt neque cumque blanditiis.
+              <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <div class="title">Development</div>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus eaque illo ipsa hic nam quae excepturi accusamus quod, reprehenderit suscipit necessitatibus. Beatae error fugiat sapiente atque nesciunt tempora nostrum laborum!</p>
             </div>
           </div>
-          <div class="col d-flex debug-2">
+          <div class="col d-flex">
             <div class="card d-flex">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias a dicta quibusdam nam quisquam alias accusantium aliquid eum molestiae nobis aspernatur, ipsum, nisi, porro quam hic? Aliquid dignissimos aliquam cupiditate, accusantium excepturi deleniti eius quo fugit vero saepe animi minus repellat harum? Quo saepe vel nesciunt facere. Incidunt, unde pariatur! Inventore necessitatibus odio et rerum cupiditate sequi suscipit, modi reiciendis quo tempora magnam, architecto excepturi dolorum molestias labore reprehenderit quibusdam ad minus quod quas culpa id? Sequi earum id ad sed, optio, quae aperiam accusantium illum labore sint vel, unde minima ullam libero vitae ea sunt neque cumque blanditiis.
+              <div class="icon"><i class="fa-solid fa-bullhorn"></i></div>
+              <div class="title">Marketing</div>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus eaque illo ipsa hic nam quae excepturi accusamus quod, reprehenderit suscipit necessitatibus. Beatae error fugiat sapiente atque nesciunt tempora nostrum laborum!</p>
             </div>
           </div>
 
@@ -69,10 +104,16 @@
 
         <div class="row d-flex">
 
-          <div class="col d-flex debug-2">
-            <div class="card d-flex">
-             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias a dicta quibusdam nam quisquam alias accusantium aliquid eum molestiae nobis aspernatur, ipsum, nisi, porro quam hic? Aliquid dignissimos aliquam cupiditate, accusantium excepturi deleniti eius quo fugit vero saepe animi minus repellat harum? Quo saepe vel nesciunt facere. Incidunt, unde pariatur! Inventore necessitatibus odio et rerum cupiditate sequi suscipit, modi reiciendis quo tempora magnam, architecto excepturi dolorum molestias labore reprehenderit quibusdam ad minus quod quas culpa id? Sequi earum id ad sed, optio, quae aperiam accusantium illum labore sint vel, unde minima ullam libero vitae ea sunt neque cumque blanditiis.
-            </div>
+          <div class="col d-flex">
+
+           <div class="image">
+            <img src="img/planning1.png" alt="1">
+           </div>
+
+           <div class="title"></div>
+
+           <p></p>
+
           </div>
           <div class="col d-flex debug-2">
             <div class="card d-flex">
