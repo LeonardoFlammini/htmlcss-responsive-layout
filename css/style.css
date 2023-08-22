@@ -20,6 +20,7 @@ body{
 
 .d-flex {
   display: flex;
+  gap: 20px;
 }
 
 .debug-1{
@@ -106,17 +107,16 @@ main .card {
   padding: 40px;
 }
 
-main .card .title,
-main .col .title {
+main .card .title {
   text-align: center;
   font-weight: bold;
   font-size: 1.5rem;
   color: var(--dark-blue);
 }
 
-main .card p {
+main p {
   font-weight: bold;
-  margin: 20px 0;
+  /* margin: 20px 0; */
   line-height: 2rem;
   color: var(--grey);
 }
@@ -125,6 +125,7 @@ main .card .right {
   flex-basis: 50%;
   margin-top: 30px;
 }
+
 
 main img {
   width: 100%;
@@ -155,8 +156,14 @@ main .icon {
 /* planning */
 
 main #planning {
+  padding-bottom: 20px;
   background-color: var(--violet);
   color: white;
+}
+
+main #planning .col {
+  row-gap: 30px;
+  justify-content: flex-start;
 }
 
 main #planning .image {
@@ -164,9 +171,29 @@ main #planning .image {
 
 }
 
-main #planning .title {
-  font-size: 3rem;
+main #planning .col .title {
+  font-weight: bold;
+  font-size: 2rem;
   color: white;
+}
+
+main #planning .card{
+  background-color: white; color: black;
+}
+
+main #planning .card .title {
+  color: black;
+}
+
+
+main .btn.round {
+  text-align: center;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  border-radius: 50%;
+  background-color: var(--violet);
 }
 
 /* partners */
@@ -175,10 +202,10 @@ main #partners .row {
   padding-top: 20px;
 }
 
-p{
+/* p{
   display: block;
   padding-bottom: 20px;
-}
+} */
 
 #with-us .container{
   align-items: center;
