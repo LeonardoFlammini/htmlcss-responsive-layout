@@ -96,6 +96,7 @@ main .col {
 main .card {
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   background-color: var(--light-blue);
   border-radius: 15px;
   padding: 40px;
@@ -356,18 +357,42 @@ footer .text {
 
 /* media query */
 
-@media screen and (min-widht:768px) {
+@media screen and (min-width:768px){
   .container {
     max-width: 765px;
+  }
+
+/* intro */
+
+  #intro .d-flex {
+    gap: 0;
   }
 
   #intro .container {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  #intro .row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:stretch ;
   }
 
   #intro .col {
+    align-items:stretch ;
     flex-basis: calc(100% / 3);
+    padding: 20px;
+    
   }
+
+
+  #col-phone {
+    flex-grow: 1;
+  }
+
+/* testimonials */
+
 }
