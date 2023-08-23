@@ -364,11 +364,13 @@ footer .text {
 
 /* intro */
 
-  #intro .d-flex {
+  #intro .d-flex ,
+  #with-us .d-flex{
     gap: 0;
   }
 
-  #intro .container {
+  #intro .container ,
+  #with-us .container{
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
@@ -393,6 +395,19 @@ footer .text {
     flex-grow: 1;
   }
 
-/* testimonials */
+/* partners */
+#with-us .col {
+  width: 50%;
+  padding: 0;
+}
+
+#with-us .row {
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
 
 }
