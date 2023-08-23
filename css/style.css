@@ -38,13 +38,7 @@ body{
   max-width: 576px;
   margin: 0 auto;
 }
-/* .frame {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-color: black;
-  margin: 20px;
-} */
+
 
 .btn {
   display: inline-block;
@@ -93,7 +87,7 @@ main .row {
 
 main .col {
   flex-basis: 100%;
-  height: 300px;
+  /* height: 300px; */
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -204,7 +198,8 @@ main #partners #testimonials {
   font-weight: lighter;
 }
 
-main #partners .int {
+main #partners .int, 
+main #start .int{
   text-transform: uppercase;
   font-size: 1.5rem;
   text-align: center;
@@ -312,14 +307,67 @@ main #about .card .text {
 /* start */
 main #start {
   background-color: var(--violet);
+  color: white;
+}
+
+main #start .container {
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+main #start .int {
+  color: grey;
+}
+
+main #start .title{
+  font-size: 2rem;
+  font-weight: bold;
+  
+}
+main #start .cta{
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--yellow)
+}
+
+main #start .text {
+  font-size: 0.8rem;
 }
 
 /* footer */
 footer {
   height: 200px;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  background-color: var(--grey);
+  color: white;
 }
+
+footer .container {
+  flex-wrap: wrap;
+  padding: 10px 40px;
+}
+
 footer .text {
   padding: 20px 0;
+}
+
+
+/* media query */
+
+@media screen and (min-widht:768px) {
+  .container {
+    max-width: 765px;
+  }
+
+  #intro .container {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  #intro .col {
+    flex-basis: calc(100% / 3);
+  }
 }
